@@ -25,7 +25,7 @@ export default function Header({ isHome = false, showAbout = false }) {
             >
               <img
                 className="max-w-12 md:max-w-14 object-contain"
-                src="./lil_ol_me.gif"
+                src="./lil_ol_me_resize.gif"
                 alt="pixel sprite gif of me"
               />
             </Link>

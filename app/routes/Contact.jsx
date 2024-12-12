@@ -65,7 +65,6 @@ export default function Events() {
                   >
                     Resume
                   </a>
-                  {/* <DownloadSvg /> */}
                 </li>
               </ul>
             </div>

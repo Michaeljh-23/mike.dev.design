@@ -198,6 +198,11 @@ p, li {
   font-style: normal;
 }
 
+button:disabled, input:disabled, textarea:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
 .neon-text {
   font-family: "Playwrite NO", cursive;
   font-weight: 100;

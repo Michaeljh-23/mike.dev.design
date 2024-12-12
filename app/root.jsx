@@ -19,6 +19,7 @@ export const links = () => [{ rel: "stylesheet", href: styles }];
 export default function App() {
   const { images, loading } = useLoaderData() || {};
   const nodeRef = useRef(null);
+
   function AnimatedOutlet() {
     const [outlet] = useState(useOutlet());
     return outlet;
@@ -47,7 +48,6 @@ export default function App() {
       <body>
         {loading ? (
           <div id="loading-screen">
-            {/* Add your loading screen content here */}
             <p>Loading....................</p>
           </div>
         ) : (

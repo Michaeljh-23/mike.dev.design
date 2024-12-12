@@ -5,9 +5,9 @@ export default function HomeMain({ setLoading, homeImages }) {
   // const size = useWindowSize();
 
   const gifsList = [
+    { url: "/laptop-trans.gif", alt: "pixel me gif" },
+    { url: "/coffee.gif", alt: "pixel laptop gif" },
     { url: "/sarge_n_plant_scene.png", alt: "pixel laptop gif" },
-    { url: "/lil_ol_me.gif", alt: "pixel me gif" },
-    { url: "/laptop-trans.gif", alt: "pixel laptop gif" },
   ];
 
   const gifCards = (gifs) => {
@@ -15,11 +15,18 @@ export default function HomeMain({ setLoading, homeImages }) {
       <div className="grid grid-cols-3 w-full justify-center items-center">
         {gifs.map((gif, i) => {
           return (
-            <div key={i} className="flex justify-center">
+            <div
+              key={i}
+              className={
+                i === 0
+                  ? "flex justify-center relative top-4"
+                  : "flex justify-center"
+              }
+            >
               <img
                 src={gif.url}
                 alt={gif.alt}
-                className="w-full object-fit max-w-[160px]"
+                className="w-full  max-w-[160px] h-min"
               />
             </div>
           );
@@ -30,19 +37,9 @@ export default function HomeMain({ setLoading, homeImages }) {
 
   return (
     <>
-      <div
-        className="relative flex justify-center w-screen h-screen"
-        // style={{
-        //   width: size.width ? `${size.width}px` : "auto",
-        //   height: size.height ? `${size.height}px` : "1000px",
-        // }}
-      >
-        {/* <img
-          className="w-full h-full object-cover object-center absolute top-0 z-0"
-          src={homeImages[0].secure_url}
-        /> */}
-        <div className="max-w-5xl flex flex-col text-center justify-center gap-8 p-4 sm:m-8 mt-[112px]  border-white sm:border-[red]">
-          <h1 className="neon-text-white flicker-white col-span-12 flex justify-center items-center text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] relative w-full">
+      <div className="relative flex justify-center w-screen h-screen">
+        <div className="max-w-5xl flex flex-col text-center justify-center gap-8 p-6 sm:m-8 mt-[112px]  border-white sm:border-[red]">
+          <h1 className="lg:mt-24 neon-text-white flicker-white col-span-12 flex justify-center items-center text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] relative w-full">
             <span className="hidden sm:block">~</span> Welcome{" "}
             <span className="hidden sm:block">~</span>
           </h1>
