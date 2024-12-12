@@ -12,14 +12,14 @@ export default function HomeMain({ setLoading, homeImages }) {
 
   const gifCards = (gifs) => {
     return (
-      <div className="grid grid-cols-3 w-full justify-center items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 w-full justify-center items-center">
         {gifs.map((gif, i) => {
           return (
             <div
               key={i}
               className={
                 i === 0
-                  ? "flex justify-center relative top-4"
+                  ? "flex justify-center relative top-4 hidden sm:block"
                   : "flex justify-center"
               }
             >
