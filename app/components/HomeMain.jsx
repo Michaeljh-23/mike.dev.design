@@ -26,7 +26,7 @@ export default function HomeMain({ setLoading, homeImages }) {
               <img
                 src={gif.url}
                 alt={gif.alt}
-                className="w-full  max-w-[160px] h-min"
+                className="w-full  max-w-[160px] object-fit"
               />
             </div>
           );

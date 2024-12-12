@@ -26,7 +26,7 @@ export default function HamburgerMenu({ setIsTransitioning }) {
         onClick={(e) => e.stopPropagation()}
       >
         <ul
-          class="relative text-3xl flex flex-col gap-8"
+          class="relative text-5xl flex flex-col gap-8"
           onClick={(e) => e.stopPropagation()}
         >
           <li>
@@ -35,14 +35,14 @@ export default function HamburgerMenu({ setIsTransitioning }) {
               onClick={() => {
                 toggleMenu();
               }}
-              className="playwrite"
+              className="playwrite text-3xl"
             >
               Home
             </Link>
           </li>
           <li>
             <Link
-              className="playwrite"
+              className="playwrite text-3xl"
               to="/about"
               onClick={() => {
                 toggleMenu();
@@ -53,7 +53,7 @@ export default function HamburgerMenu({ setIsTransitioning }) {
           </li>
           <li>
             <Link
-              className="playwrite"
+              className="playwrite text-3xl"
               to="/contact"
               onClick={() => {
                 toggleMenu();
