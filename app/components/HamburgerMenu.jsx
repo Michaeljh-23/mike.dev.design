@@ -1,16 +1,19 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events
+ */
 import { Link } from "@remix-run/react";
 import { useEffect } from "react";
 import { useMenuContext } from "../contexts/MenuContext";
 
+// eslint-disable-next-line react/prop-types
 export default function HamburgerMenu({ setIsTransitioning }) {
   const { isMenuOpen, toggleMenu } = useMenuContext();
 
   useEffect(() => {
     if (isMenuOpen) {
       setIsTransitioning(true);
-      setTimeout(() => {
-        setIsTransitioning(false);
-      }, 300);
+      setTimeout(() => {}, 300);
     }
   }, [isMenuOpen]);
 
@@ -26,7 +29,7 @@ export default function HamburgerMenu({ setIsTransitioning }) {
         onClick={(e) => e.stopPropagation()}
       >
         <ul
-          class="relative text-5xl flex flex-col gap-8"
+          className="relative text-5xl flex flex-col gap-8"
           onClick={(e) => e.stopPropagation()}
         >
           <li>

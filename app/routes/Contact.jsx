@@ -72,8 +72,8 @@ export default function Events() {
               <p className="leading-6 text-sm sm:text-[16px] md:text-xl  pb-4 sm:p-4">
                 I am passionate about development and always looking for new
                 opportunities to grow and contribute. Please feel free to reach
-                out if you're interested in working together or just want to
-                connect!
+                out if you&apos;re interested in working together or just want
+                to connect!
               </p>
             </div>
           </div>

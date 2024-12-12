@@ -1,7 +1,4 @@
-// import { useEffect, useRef, useState } from "react";
-// import useWindowSize from "../hooks/useWindowResize";
-
-export default function HomeMain({ setLoading, homeImages }) {
+export default function HomeMain() {
   // const size = useWindowSize();
 
   const gifsList = [
