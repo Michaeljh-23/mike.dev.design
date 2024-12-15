@@ -16,7 +16,7 @@ export default function HomeMain() {
               key={i}
               className={
                 i === 0
-                  ? "flex justify-center relative top-4 hidden sm:block"
+                  ? "flex justify-center relative top-4 hidden sm:flex"
                   : "flex justify-center"
               }
             >
