@@ -2,7 +2,7 @@ export default function HomeMain() {
   // const size = useWindowSize();
 
   const gifsList = [
-    { url: "/laptop-trans.gif", alt: "pixel me gif" },
+    { url: "/laptop-trans.png", alt: "pixel me gif" },
     { url: "/coffee.gif", alt: "pixel laptop gif" },
     { url: "/sarge_n_plant_scene.png", alt: "pixel laptop gif" },
   ];
@@ -16,14 +16,14 @@ export default function HomeMain() {
               key={i}
               className={
                 i === 0
-                  ? "flex justify-center relative top-4 hidden sm:flex"
+                  ? "justify-center relative top-4 hidden sm:flex"
                   : "flex justify-center"
               }
             >
               <img
                 src={gif.url}
                 alt={gif.alt}
-                className="w-full  max-w-[160px] object-fit"
+                className="w-full  max-w-[140px] object-fit"
               />
             </div>
           );
@@ -36,7 +36,7 @@ export default function HomeMain() {
     <>
       <div className="relative flex justify-center w-screen h-screen">
         <div className="max-w-5xl flex flex-col text-center justify-center gap-8 p-6 sm:m-8 mt-[112px]  border-white sm:border-[red]">
-          <h1 className="lg:mt-24 neon-text-white flicker-white col-span-12 flex justify-center items-center text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] relative w-full">
+          <h1 className="lg:mt-24 neon-text-white col-span-12 flex justify-center items-center text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] relative w-full">
             <span className="hidden sm:block">~</span> Welcome{" "}
             <span className="hidden sm:block">~</span>
           </h1>

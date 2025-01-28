@@ -16,6 +16,7 @@
     "@fortawesome/fontawesome-free": "^6.7.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@material-tailwind/react": "^2.1.10",
     "@netlify/functions": "^2.6.0",
     "@netlify/remix-adapter": "^2.3.1",
     "@rehooks/local-storage": "^2.4.5",

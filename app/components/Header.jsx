@@ -11,7 +11,7 @@ export default function Header({ isHome = false, showAbout = false }) {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const { isMenuOpen, toggleMenu } = useMenuContext();
   const location = useLocation();
-  const tabs = ["Home", "About", "Contact"];
+  const tabs = ["Home", "About", "Contact", "Projects"];
 
   return (
     <>

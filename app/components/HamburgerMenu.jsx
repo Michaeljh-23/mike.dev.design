@@ -64,6 +64,17 @@ export default function HamburgerMenu({ setIsTransitioning }) {
             >
               Contact
             </Link>
+          </li>{" "}
+          <li>
+            <Link
+              className="playwrite text-3xl"
+              to="/projects"
+              onClick={() => {
+                toggleMenu();
+              }}
+            >
+              Projects
+            </Link>
           </li>
         </ul>
         <div></div>
