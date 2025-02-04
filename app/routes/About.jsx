@@ -51,8 +51,8 @@ export default function About() {
                     {copied ? "copied" : "copy"}
                   </button>
                 </li>
-                <li className="my-2">Charleston, South Carolina</li>
-                <li className="my-2">
+                <li className="mt-2">Charleston, South Carolina</li>
+                {/* <li className="my-2">
                   <a
                     id="download"
                     className="neon-text border-none"
@@ -61,7 +61,7 @@ export default function About() {
                   >
                     Resume Download
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="sm:mx-12 sm:px-2">

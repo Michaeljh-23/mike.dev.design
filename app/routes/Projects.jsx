@@ -36,6 +36,37 @@ export default function Projects() {
           <h1 className="neon-text flicker-less">Personal Projects</h1>
           {/* Section */}
           <div className="relative flex flex-wrap sm:flex-nowrap text-start mt-6">
+            <div className="flex-1">
+              <div className="pb-4 sm:p-4">
+                <h3 className="text-lg font-semibold mb-2">Little Lemon</h3>
+                <span className="text-sm text-gray-500 mb-4 block">2025</span>
+                <p className="leading-6 text-sm sm:text-[16px] sm:mr-6 md:text-base break-words whitespace-normal">
+                  For my Little Lemon capstone project, I developed a fully
+                  responsive restaurant website as the final requirement for the
+                  Meta Professional Front-End Developer Certification. This solo
+                  project demonstrated my ability to integrate key front-end
+                  skills, including React, JavaScript, and responsive design
+                  principles. The project involved creating an intuitive user
+                  interface, showcasing menu items, and implementing
+                  accessibility standards to ensure a seamless experience for
+                  all users. Completing this capstone not only solidified my
+                  technical skills but also earned me the Meta Professional
+                  Front-End Developer certification, highlighting my dedication
+                  to mastering front-end development.
+                </p>
+                <ul className="list-disc ml-6 mt-4 text-sm sm:text-base">
+                  <li>Tech Stack: React, Javascript, HTML, CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full sm:w-2/5 lg:min-w-[450px] flex items-center sm:mr-6 mb-6 sm:mb-0 mt-2">
+              <div className="border p-2 ">
+                <CarouselImages images={lemonImages} />
+              </div>
+            </div>
+          </div>
+          {/* Section */}
+          <div className="relative flex flex-wrap sm:flex-nowrap text-start mt-6">
             <div className="w-full sm:w-2/5 lg:min-w-[450px] flex items-center sm:mr-6 mb-6 sm:mb-0 mt-2">
               <div className="border p-2 ">
                 <CarouselImages images={flockImages} />
@@ -65,37 +96,6 @@ export default function Projects() {
                     information
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-          {/* Section */}
-          <div className="relative flex flex-wrap sm:flex-nowrap text-start mt-6">
-            <div className="flex-1">
-              <div className="pb-4 sm:p-4">
-                <h3 className="text-lg font-semibold mb-2">Little Lemon</h3>
-                <span className="text-sm text-gray-500 mb-4 block">2025</span>
-                <p className="leading-6 text-sm sm:text-[16px] md:text-base break-words whitespace-normal">
-                  For my Little Lemon capstone project, I developed a fully
-                  responsive restaurant website as the final requirement for the
-                  Meta Professional Front-End Developer Certification. This solo
-                  project demonstrated my ability to integrate key front-end
-                  skills, including React, JavaScript, and responsive design
-                  principles. The project involved creating an intuitive user
-                  interface, showcasing menu items, and implementing
-                  accessibility standards to ensure a seamless experience for
-                  all users. Completing this capstone not only solidified my
-                  technical skills but also earned me the Meta Professional
-                  Front-End Developer certification, highlighting my dedication
-                  to mastering front-end development.
-                </p>
-                <ul className="list-disc ml-6 mt-4 text-sm sm:text-base">
-                  <li>Tech Stack: React, Javascript, HTML, CSS</li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full sm:w-2/5 lg:min-w-[450px] flex items-center sm:mr-6 mb-6 sm:mb-0 mt-2">
-              <div className="border p-2 ">
-                <CarouselImages images={lemonImages} />
               </div>
             </div>
           </div>

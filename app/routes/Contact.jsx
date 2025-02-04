@@ -8,7 +8,7 @@ export const meta = () => {
     { title: "Contact" },
     {
       name: "Contact",
-      content: "Contact & Resume",
+      content: "Contact",
     },
   ];
 };
