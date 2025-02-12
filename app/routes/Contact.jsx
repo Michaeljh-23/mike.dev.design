@@ -57,14 +57,14 @@ export default function Events() {
                   <a href="https://github.com/Michaeljh-23">
                     <GithubSVG />
                   </a>
-                  <a
+                  {/* <a
                     id="download"
                     className="neon-text border-none text-2xl"
                     href="/harfenist_resume_public.docx"
                     download
                   >
                     Resume
-                  </a>
+                  </a> */}
                 </li>
               </ul>
             </div>

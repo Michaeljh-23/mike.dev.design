@@ -40,7 +40,6 @@ export default function Projects() {
                 <CarouselImages images={fetchImages} />
               </div>
             </div>
-
             <div className="flex-1">
               <div className="pb-4 sm:p-4">
                 <h3 className="text-lg font-semibold mb-2">Fetch a Friend</h3>
