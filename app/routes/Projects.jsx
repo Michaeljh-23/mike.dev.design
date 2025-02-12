@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useMenuContext } from "../contexts/MenuContext.jsx";
 import CarouselImages from "../components/CarouselImages";
 
@@ -22,7 +21,7 @@ export default function Projects() {
     "/lemon_home_middle.png",
     "/lemon_res_footer.png",
   ];
-
+  const fetchImages = ["/home-fetch.png", "cards-fetch.png"];
   return (
     <>
       <div
@@ -33,7 +32,49 @@ export default function Projects() {
         onKeyDown={() => isMenuOpen && toggleMenu()}
       >
         <div className="flex-col-simple text-center !gap-6 md:!gap-10">
-          <h1 className="neon-text flicker-less">Personal Projects</h1>
+          <h1 className="neon-text flicker-less">Personal Projects</h1>{" "}
+          {/* Section */}
+          <div className="relative flex flex-wrap sm:flex-nowrap text-start mt-6">
+            <div className="w-full sm:w-2/5 lg:min-w-[450px] flex items-center sm:mr-6 mb-6 sm:mb-0 mt-2">
+              <div className="border p-2 ">
+                <CarouselImages images={fetchImages} />
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <div className="pb-4 sm:p-4">
+                <h3 className="text-lg font-semibold mb-2">Fetch a Friend</h3>
+                <span className="text-sm text-gray-500 mb-4 block">2025</span>
+                <p className="leading-6 text-sm sm:text-[16px] md:text-base break-words whitespace-normal">
+                  Fetch-a-Friend is a dynamic front-end project designed to
+                  showcase my skills in React, Bootstrap, and responsive UI
+                  development. The application allows users to fetch and display
+                  a list of dogs ready for adoption, complete with interactive
+                  features like search, filtering, and dynamic data rendering.
+                  Built with a focus on clean design and intuitive user
+                  experience, Fetch-a-Friend demonstrates my ability to work
+                  with APIs, manage state efficiently, and create engaging,
+                  user-friendly interfaces. This project highlights my technical
+                  proficiency and attention to detail in front-end development.
+                </p>
+                <ul className="list-disc ml-6 mt-4 text-sm sm:text-base">
+                  <li>
+                    Tech Stack: React, React Router, Bootsrap, JavaScript, CSS
+                  </li>
+                  <li>
+                    <a
+                      href="https://fetchfriend.netlify.app/login"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-pink-300"
+                    >
+                      Fetch-a-Friend on Github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           {/* Section */}
           <div className="relative flex flex-wrap sm:flex-nowrap text-start mt-6">
             <div className="flex-1">
