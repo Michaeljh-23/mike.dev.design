@@ -63,12 +63,22 @@ export default function Projects() {
                   </li>
                   <li>
                     <a
-                      href="https://fetchfriend.netlify.app/login"
+                      href="https://github.com/Michaeljh-23/fetch-a-friend"
                       target="_blank"
                       rel="noreferrer"
                       className="underline hover:text-pink-300"
                     >
                       Fetch-a-Friend on Github
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://fetchfriend.netlify.app/login"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-pink-300"
+                    >
+                      Fetch-a-Friend Hosted by Netlify
                     </a>
                   </li>
                 </ul>
